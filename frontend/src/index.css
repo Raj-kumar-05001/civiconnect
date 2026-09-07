@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f7f5ef;
+  color: #1a1a1a;
+}
+
+h1, h2, h3, .font-display {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.cc-map-pin { filter: drop-shadow(0 2px 3px rgba(0,0,0,0.35)); }
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #E8A33D !important;
+  box-shadow: 0 0 0 3px rgba(232,163,61,0.15);
+}
