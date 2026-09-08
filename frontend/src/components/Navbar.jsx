@@ -96,7 +96,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="fixed inset-0 z-50 flex md:hidden">
+        <div className="fixed inset-0 z-[9999] flex md:hidden">
           <div className="w-60 h-full">{content}</div>
           <div onClick={() => setOpen(false)} className="flex-1 bg-black/40" />
         </div>
