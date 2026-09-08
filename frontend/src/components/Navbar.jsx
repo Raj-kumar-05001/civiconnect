@@ -79,10 +79,11 @@ export default function Navbar() {
     </div>
   );
 
-  return (
+   return (
     <>
-      <div className="hidden md:block h-full">{content}</div>
-      <div className="md:hidden flex items-center justify-between bg-navy px-4 py-3.5 sticky top-0 z-30">
+      <div className="hidden md:flex md:flex-col h-full flex-shrink-0">{content}</div>
+
+      <div className="flex md:hidden items-center justify-between bg-navy px-4 py-3.5 sticky top-0 z-30 w-full flex-shrink-0">
         <Link to="/" className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-lg bg-amber flex items-center justify-center">
             <MapPin size={15} className="text-navyDeep" strokeWidth={2.5} />
@@ -93,6 +94,7 @@ export default function Navbar() {
           <Menu size={24} />
         </button>
       </div>
+
       {open && (
         <div className="fixed inset-0 z-50 flex md:hidden">
           <div className="w-60 h-full">{content}</div>
